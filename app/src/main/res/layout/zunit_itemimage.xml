@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imageItem"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@color/colorPrimary"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageItem"
+        android:textColor="@color/lightblack"
+        android:textSize="13sp"
+        android:maxLines="2"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="6dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/priceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemName"
+        android:text="Rs 102"
+        android:textSize="15sp"
+        android:textColor="@color/lightblack"
+        android:alpha="0.7"
+        android:layout_marginStart="10dp" />
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:id="@+id/qtyRl"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/itemName"
+        android:background = "@drawable/round_corner_light"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/subBt"
+            android:layout_width="28dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_sub_black"
+            android:tint="@color/colorPrimary"
+            android:backgroundTint="@color/greenOk"/>
+
+        <TextView
+            android:id="@+id/qtyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="4dp"
+            android:layout_toEndOf="@id/subBt"
+            android:paddingEnd="4dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/message_button"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/addQtyBt"
+            android:layout_width="28dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:layout_toEndOf="@id/qtyTv"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_add_black"
+            android:tint="@color/colorPrimary"
+            android:backgroundTint="@color/white"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addItemBt"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="ADD"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_below="@id/itemName"
+        android:visibility="visible"
+        android:background="@drawable/connect_button"/>
+
+</RelativeLayout>

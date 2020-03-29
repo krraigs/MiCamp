@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Fields"
+            android:textColor="@color/darkpurple"
+            android:layout_marginBottom="12dp" />
+
+        <Spinner
+            android:id="@+id/dialog_degree"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white" />
+
+        <Spinner
+            android:id="@+id/dialog_branch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white" />
+
+        <Spinner
+            android:id="@+id/dialog_semester"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <Button
+                android:id="@+id/dialog_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Search books"
+                android:background="@drawable/curve"
+                android:backgroundTint="@color/darkpurple"
+                android:textColor="@color/white"
+                android:padding="6dp" />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

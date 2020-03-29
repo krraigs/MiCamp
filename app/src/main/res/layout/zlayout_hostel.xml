@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp">
+
+    <RelativeLayout
+        android:id="@+id/mbhfRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MBH-F Block"
+            android:padding="8dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/lightblack"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mbhaRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MBH-A Block"
+            android:padding="8dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/lightblack"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mbhbRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MBH-B Block"
+            android:padding="8dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/lightblack"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

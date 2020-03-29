@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a Delivery Address"
+        android:textSize="17sp"
+        android:textColor="@color/lightblack"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin = "16dp" />
+
+    <RelativeLayout
+        android:id="@+id/selfRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/raw"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_location"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/selfTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/raw"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/mainappcolor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take your order at Snackers"
+            android:layout_below="@id/selfTv"
+            android:layout_toEndOf="@id/raw"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.8"
+            android:textColor="@color/mainappcolor"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/lightgrey"/>
+
+
+    <RelativeLayout
+        android:id="@+id/homeRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/raw1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_home2"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/homeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/raw1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/mainappcolor"/>
+
+        <TextView
+            android:id="@+id/homeAddressTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User address"
+            android:layout_below="@id/homeTv"
+            android:layout_toEndOf="@id/raw1"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.8"
+            android:textColor="@color/mainappcolor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/snaker_delivery"
+            android:textSize="13sp"
+            android:textAlignment="textEnd"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/lightgrey"/>
+
+    <RelativeLayout
+        android:id="@+id/addressRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/raw2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_add"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/addAddressTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Address"
+            android:layout_toEndOf="@id/raw2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/enterAddressRl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addressEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter delivery address"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/callL"
+            android:layout_width="match_parent"
+            android:layout_below="@id/addressL"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/callEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter contact number"
+                android:inputType="number"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/saveBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/callL"
+            android:layout_centerHorizontal="true"
+            android:text="Save"
+            android:background="@drawable/curve"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

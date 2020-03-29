@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/newsUpper"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/gradient2">
+
+                <TextView
+                    android:id="@+id/newsDate"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/newsTopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Google Cloud Jam"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/newsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightblack"
+            android:text="Dear Students , Extra class on Saturday has shifted to SUnday due to election duty of our teachers."
+            android:layout_margin="12dp"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.News.AddNewsActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/addTitleEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add title"
+        android:background="@drawable/message_button"
+        android:layout_margin="10dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/contentEt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="Write about your views"
+        android:background="@drawable/message_button"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:gravity="top|start" />
+
+    <Button
+        android:id="@+id/saveNewsBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save News"
+        android:background="@drawable/curve"
+        android:backgroundTint="@color/darkpurple"
+        android:textColor="@color/white"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

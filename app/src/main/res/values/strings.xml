@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">MiCamp</string>
+
+    <string name="cse">Computer Science</string>
+    <string name="ice">Instrumentation and Control</string>
+    <string name="ece">Electronics And Comm.</string>
+    <string name="ee">Electrical</string>
+    <string name="me">Mechanical</string>
+    <string name="it">Information Technology</string>
+    <string name="che">Chemical</string>
+    <string name="ipe">Industrial And Production</string>
+    <string name="cv">Civil</string>
+    <string name="bt">Biotechnology</string>
+    <string name="tt">Textile</string>
+    <string name="hum">Humanities</string>
+    <string name="chem">Chemistry</string>
+    <string name="phy">Physics</string>
+    <string name="maths">Mathematics</string>
+
+    <string name="complaint">Complaint</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="request">Request</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_home">Home</string>
+    <string name="card_description">Description</string>
+
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <string name="facebook_app_id">2396605937024946</string>
+
+    <!--    <string name="default_web_client_id" translatable="false">136410357192-i6slqaq9du1sk82lufvv15rf1kq3m6k9.apps.googleusercontent.com</string>-->
+    <string name="title_activity_library">LibraryActivity</string>
+    <string name="title_activity_exams">ExamsActivity</string>
+    <string name="title_activity_blog">BlogActivity</string>
+    <string name="title_activity_updates">UpdatesActivity</string>
+
+    <string name="author_placeholder">Author</string>
+    <string name="blog_info_placeholder">Here is some blog for you</string>
+    <string name="title_activity_photo">PhotoActivity</string>
+    <string name="title_activity_sports">SportsActivity</string>
+    <string name="title_activity_clubs">ClubsActivity</string>
+
+
+    <string name="btech">B.Tech</string>
+    <string name="phd">PhD</string>
+    <string name="mtech">M.Tech</string>
+
+    <string name="qualityPolicy">To develop technical human resource of excellence suitable for global requirements.
+        \n\nTo ensure good quality academic and industrial research programmes in different areas of engineering and technology.
+        \n\nTo generate industry-institute synergy for shaping technical education to meet the requirement of industry.</string>
+
+    <string name="vision">"To build a rich intellectual potential embedded with interdisciplinary knowledge, human values and professional ethics among the youth, aspirant of becoming engineers and technologists, so that they contribute to society and create a niche for a successful career".</string>
+    <string name="mission">To become a leading and unique institution of higher learning, offering state-of-the-art education,
+        research and training in engineering and technology to students who are able and eager to become change agents for the industrial and economic progress of the nation.
+        To nurture and sustain an academic ambience conducive to the development and growth of committed professionals for sustainable development of the nation and to
+        accomplish its integration into the global economy. To strive to be a Swachch NIT providing a guarantee of clean hostel, clean mess, clean water and hygienic and
+        wholesome food to its students</string>
+    <string name="lost_found"><![CDATA[Lost & Found]]></string>
+    <string name="buy_sell"><![CDATA[Buy & Sell]]></string>
+    <string name="snaker_delivery">Delivery Charges \n Rs 20</string>
+
+    <string name="appAdId">ca-app-pub-6576561205238335~5473582442</string>
+    <string name="adUnitId">ca-app-pub-6576561205238335/9425748821</string>
+
+</resources>

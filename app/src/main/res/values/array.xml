@@ -1,0 +1,116 @@
+<resources>
+    <!-- These are the options displayed in the gender drop-down Spinner -->
+    <string-array name="array_course">
+        <item>Select course</item>
+        <item>@string/btech</item>
+        <item>@string/mtech</item>
+        <item>@string/phd</item>
+    </string-array>
+
+    <string-array name="array_college">
+        <item>Select college</item>
+        <item>NIT Jalandhar</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="choose_college">
+        <item>NIT Jalandhar</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="array_feedback_category">
+        <item>@string/complaint</item>
+        <item>@string/suggestion</item>
+        <item>@string/request</item>
+    </string-array>
+
+    <string-array name="array_user_year">
+        <item>"Select year</item>
+        <item>@string/first</item>
+        <item>@string/second</item>
+        <item>@string/third</item>
+        <item>@string/fourth</item>
+    </string-array>
+
+    <string-array name="mess">
+        <item>Select time</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+
+    <string-array name="array_hostel">
+        <item>Select hostel</item>
+        <item>MBH-F</item>
+        <item>MBH-A</item>
+        <item>MBH-B</item>
+    </string-array>
+
+    <string-array name="array_quality">
+        <item>Select your quality</item>
+        <item>Android Developer</item>
+        <item>Website Developer</item>
+        <item>Robotics</item>
+        <item>Machine Learning</item>
+        <item>Data Scientist</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="eventCategoryArray">
+        <item>Upcoming Events</item>
+        <item>Featured Events</item>
+        <item>Workshops</item>
+    </string-array>
+
+    <string-array name="downloadCategorySpinner">
+
+        <item>Student Corner</item>
+        <item>News</item>
+        <item>Downloads</item>
+        <item>Scholarship</item>
+
+    </string-array>
+
+    <string-array name="examples">
+        <item> </item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="array_semester">
+        <item>Select sem</item>
+        <item>1 Sem</item>
+        <item>2 Sem</item>
+        <item>3 Sem</item>
+        <item>4 Sem</item>
+        <item>5 Sem</item>
+        <item>6 Sem</item>
+        <item>7 Sem</item>
+        <item>8 Sem</item>
+
+    </string-array>
+
+    <string-array name="array_user_branch">
+        <item>Select branch</item>
+        <item>@string/cse</item>
+        <item>@string/ece</item>
+        <item>@string/ice</item>
+        <item>@string/ee</item>
+        <item>@string/me</item>
+        <item>@string/it</item>
+        <item>@string/che</item>
+        <item>@string/ipe</item>
+        <item>@string/cv</item>
+        <item>@string/bt</item>
+        <item>@string/tt</item>
+        <item>@string/hum</item>
+        <item>@string/phy</item>
+        <item>@string/chem</item>
+        <item>@string/maths</item>
+    </string-array>
+
+    <string name="first">1st Year</string>
+    <string name="second">2nd Year</string>
+    <string name="third">3rd Year</string>
+    <string name="fourth">4th Year</string>
+
+</resources>

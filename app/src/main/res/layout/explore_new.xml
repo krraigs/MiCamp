@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="65dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Academics"
+            android:padding="4dp"
+            android:textColor="@color/darkpurple"
+            android:fontFamily="@font/poppins"
+            android:textAllCaps="true" />
+
+        <HorizontalScrollView
+            android:layout_below="@id/raw"
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-8dp"
+                android:divider="@color/white"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:id="@+id/cse"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/computerbranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_computer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/computerbranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="CSE" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ece"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/electronicsBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_electronics" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/electronicsBranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="ECE" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ice"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/instrumentationBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_instrument" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/instrumentationBranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="ICE" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ee"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/electricalBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_electrical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/electricalBranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Electrical" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/me"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/mechanicalBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_mechanical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mechanicalBranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Mechanical" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/it"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/infoTechBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_information_tech" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/infoTechBranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Informatio Technology" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/che"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/chemicalBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_chemical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/chemicalBranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Chemical" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ipe"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/industrialBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_industrial_prod" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/industrialBranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="IPE" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/civil"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/civilBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_civil" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/civilBranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Civil" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/bt"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/biotechBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_biotech" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/biotechBranch"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Biotechnology" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/textile"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/textileBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_textile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textileBranch"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="Textile" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/humanities"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/humanitiesBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_humanities_management" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_below="@id/humanitiesBranch"
+                        android:layout_centerInParent="true"
+                        android:text="Humanities" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/chemistry"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/chemistryBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_chemistry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/chemistryBranch"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="Chemistry" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/physics"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/physicsBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_physics" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/physicsBranch"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="Physics" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/maths"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/mathematicsBranch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_mathematics" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mathematicsBranch"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="Mathematics" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/galleryCv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonCv"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/raw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:padding="6dp"
+                android:text="Gallery"
+                android:textColor="@color/darkpurple"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/seeAllGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="See All"
+                android:drawableTint="@color/lightblack"
+                android:drawableEnd="@drawable/forward_arrow_black"
+                android:textAlignment="center"
+                android:textColor="@color/lightblack"
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raw1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/galleryCv1"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginEnd="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/gallery_event_photo"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/bg5"/>
+
+                            <TextView
+                                android:id="@+id/gallery_event_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:text="Event Name"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:background="@color/grey"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/galleryCv2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginEnd="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/gallery_event_photo2"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/bg5"/>
+
+                            <TextView
+                                android:id="@+id/gallery_event_name2"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:text="Event Name"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:background="@color/grey"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/galleryCv3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginEnd="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/gallery_event_photo3"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/gradient_background"/>
+
+                            <TextView
+                                android:id="@+id/gallery_event_name3"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:text="Event Name"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:background="@color/grey"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/galleryCv4"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginEnd="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/gallery_event_photo4"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/bg5"/>
+
+                            <TextView
+                                android:id="@+id/gallery_event_name4"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:text="Event Name"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:background="@color/grey"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buttonCv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blogsCv"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="15dp"
+            android:padding="10dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/buyLl"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_buying"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy_sell"
+                        android:textSize="15sp"
+                        android:textColor="@color/lightblack"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/clubsLl"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/movie_club"
+                        android:tint="@color/colorPrimary"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clubs"
+                        android:textSize="15sp"
+                        android:textColor="@color/lightblack"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lostLl"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_add"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lost_found"
+                        android:textSize="15sp"
+                        android:textColor="@color/lightblack"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/blogsCv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttons"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/raw2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:padding="6dp"
+                android:text="Blogs"
+                android:textColor="@color/darkpurple"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/seeAllBlogs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="See All"
+                android:drawableEnd="@drawable/forward_arrow_black"
+                android:textAlignment="center"
+                android:textColor="@color/lightblack"
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raw2"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/blogcard"
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_marginTop="6dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/topicTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="18dp"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="13sp"
+                                android:maxLines="2"
+                                android:text="Topic Name"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/authorTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_below="@id/topicTv"
+                                android:fontFamily="@font/poppins"
+                                android:text="Author Name"
+                                android:textSize="12sp"
+                                android:alpha="0.8"
+                                android:maxLines="1"
+                                android:textColor="@color/lightblack" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/blogcard2"
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="6dp"
+                        app:cardCornerRadius="12dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/topicTv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="18dp"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="13sp"
+                                android:text="Topic Name"
+                                android:maxLines="2"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/authorTv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_below="@id/topicTv2"
+                                android:fontFamily="@font/poppins"
+                                android:text="Author Name"
+                                android:textSize="12sp"
+                                android:alpha="0.8"
+                                android:maxLines="1"
+                                android:textColor="@color/lightblack" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/blogcard3"
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginTop="6dp"
+                        app:cardCornerRadius="12dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/topicTv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="18dp"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="13sp"
+                                android:text="Topic Name"
+                                android:maxLines="2"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/authorTv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_below="@id/topicTv3"
+                                android:fontFamily="@font/poppins"
+                                android:text="Author Name"
+                                android:textSize="12sp"
+                                android:maxLines="1"
+                                android:alpha="0.8"
+                                android:textColor="@color/lightblack" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/blogcard4"
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginTop="6dp"
+                        app:cardCornerRadius="12dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/topicTv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="18dp"
+                                android:fontFamily="@font/poppins"
+                                android:maxLines="2"
+                                android:textSize="13sp"
+                                android:text="Topic Name"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/authorTv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_below="@id/topicTv4"
+                                android:fontFamily="@font/poppins"
+                                android:text="Author Name"
+                                android:textSize="12sp"
+                                android:alpha="0.8"
+                                android:maxLines="1"
+                                android:textColor="@color/lightblack" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/blogsCv">-->
+
+    <!--<LinearLayout-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:weightSum="2"-->
+    <!--    android:layout_margin="16dp">-->
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="110dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        app:cardCornerRadius="14dp"-->
+    <!--        app:cardElevation="5dp"-->
+    <!--        android:layout_marginEnd="16dp">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="@drawable/gradient">-->
+
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="@string/buy_sell"-->
+    <!--                android:textSize="17sp"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:layout_centerInParent="true"/>-->
+    <!--        </RelativeLayout>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="110dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        app:cardCornerRadius="14dp"-->
+    <!--        app:cardElevation="5dp"-->
+    <!--        android:layout_marginEnd="16dp">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="@drawable/gradient">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="@string/lost_found"-->
+    <!--                android:textSize="17sp"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:layout_centerInParent="true"/>-->
+    <!--        </RelativeLayout>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->

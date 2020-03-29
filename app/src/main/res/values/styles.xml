@@ -1,0 +1,125 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <!--        <item name="android:windowLightStatusBar">true</item>-->
+        <item name="android:windowElevation">0dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+    </style>
+
+    <!--<style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">-->
+        <!--<item name="android:tint">@android:color/black</item>-->
+    <!--</style>-->
+
+    <!--<style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">-->
+        <!--<item name="color">@android:color/black</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">-->
+        <!--<item name="android:color">@android:color/black</item>-->
+        <!--<item name="android:textColor">@android:color/black</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >-->
+        <!--<item name="android:titleTextColor">@android:color/black</item>-->
+        <!--<item name="android:tint">@android:color/black</item>-->
+        <!--<item name="colorControlNormal">@android:color/black</item>-->
+        <!--<item name="android:titleTextStyle">@android:color/black</item>-->
+    <!--</style>-->
+
+    <style name="drawerFont" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+    </style>
+
+    <style name="club_card_view">
+        <item name="android:layout_height">170dp</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:elevation">16dp</item>
+    </style>
+
+    <style name="card_image_view">
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:foregroundGravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="club_text_view">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@color/lightblack</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="mainCard">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:elevation">12dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="search_card">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="search_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mainTv">
+        <item name="android:padding">3dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/lightblack</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

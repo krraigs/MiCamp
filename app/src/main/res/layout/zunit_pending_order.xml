@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/orderLl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rvLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/itemsRv"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:id="@+id/priceTv"
+            android:layout_alignParentEnd="true"
+            android:textSize="17sp"
+            android:textColor="@color/redOk"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/message_button"
+            android:backgroundTint="@color/lightgrey"
+            android:padding="9dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP"
+            android:id="@+id/otpTv"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:layout_below="@id/rvLl"
+            android:textColor="@color/redOk"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:padding="9dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:id="@+id/statusTv"
+            android:textSize="19sp"
+            android:textColor="@color/redOk"
+            android:background="@drawable/curve"
+            android:backgroundTint="@color/lightgrey"
+            android:padding="8dp"
+            android:alpha="0.9"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rvLl">
+
+            <Button
+                android:id="@+id/cancelBt"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Cancel"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/curve"
+                android:backgroundTint="@color/redOk"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/doneBt"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="PAY"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/cancelBt"
+                android:background="@drawable/curve"
+                android:backgroundTint="@color/greenOk"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

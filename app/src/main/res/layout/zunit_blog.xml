@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/blogsImage"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/screen_background_dark_transparent" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/blogsImage"
+            android:padding="8dp"
+            android:text="Author"
+            android:textColor="@color/lightblack"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blogsImage"
+            android:padding="8dp"
+            android:text="Title"
+            android:textColor="@color/darkpurple"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/subTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="6dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="6dp"
+            android:textColor="@color/lightblack"
+            android:text="@string/blog_info_placeholder"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/viewNoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blogsImage"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:padding="6dp"/>
+
+        <TextView
+            android:id="@+id/deleteBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:textColor="@color/red"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/subTitle"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/editBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:textColor="@color/red"
+            android:layout_toStartOf="@id/deleteBlog"
+            android:layout_below="@id/subTitle"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

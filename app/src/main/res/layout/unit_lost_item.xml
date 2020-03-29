@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/lost_image"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/user_profile_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/deleteLost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/crossgrey"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/lost_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lost_image"
+            android:text="Mobile Redmi Note"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/darkpurple"
+            />
+
+
+        <TextView
+            android:id="@+id/lost_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lost_name"
+            android:text="Near Lipton"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/lightblack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/lost_place"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="4dp">
+
+            <Button
+                android:id="@+id/lostProfileUserBt"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg5"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:id="@+id/lostChatUserBt"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg5"
+                android:text="Chat"
+                android:textColor="@color/white"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/youTubePlayerView"/>
+
+    <RelativeLayout
+        android:id="@+id/videoDetalRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/youTubePlayerView"
+        android:padding="8dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/videoTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video text of 2 lines will be shown here in brief"
+            android:textSize="17sp"
+            android:textColor="@color/lightblack" />
+
+        <TextView
+            android:id="@+id/vedioInfoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vedio Info"
+            android:textColor="@color/lightblack"
+            android:alpha="0.9"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp"
+            android:maxLines="5"
+            android:layout_below="@id/videoTv" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 days ago"
+            android:textColor="@color/lightblack"
+            android:alpha="0.6"
+            android:textSize="13sp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/vedioInfoTv" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightblack"
+            android:alpha="0.2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/timeTv"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/raw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggested Videos"
+        android:layout_below="@id/videoDetalRl"
+        android:textSize="17sp"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoRv"
+        android:layout_below="@id/raw"/>
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Order.FoodItemsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        app:elevation="0dp"
+        android:background="@drawable/round_main_toolbar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_collapseMode="pin">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/white"
+                android:fitsSystemWindows="true"
+                android:elevation="0dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title="MiCamp">
+
+                <Button
+                    android:id="@+id/orderMoreBt"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:elevation="12dp"
+                    android:drawableStart="@drawable/ic_shopping_cart_indigo_500_24dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_add_black"
+                    android:tint="@color/white"
+                    android:background="@drawable/curve"
+                    android:padding="6dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="end"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:text="Order" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:id="@+id/rawRl"
+                android:layout_below="@id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/raw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Snackers"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="24dp"
+                    android:maxLines="1"/>
+
+                <TextView
+                    android:id="@+id/raw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eating overloaded"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_below="@id/raw"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="2dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/food"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/raw2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textColor="@color/lightblack"
+                android:textStyle="bold"
+                android:layout_below="@id/app_bar"
+                android:textSize="24sp"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/itemsRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView
+                android:id="@+id/raw3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Bill"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="4dp"
+                android:layout_marginStart="16dp"
+                android:padding="12dp"
+                android:layout_marginEnd="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="11dp"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:id="@+id/rawx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Item Total"
+                        android:textSize="16sp"
+                        android:textColor="@color/lightblack" />
+
+                    <TextView
+                        android:id="@+id/itemsCountTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Items Count"
+                        android:layout_below="@id/rawx"
+                        android:textSize="13sp"
+                        android:textColor="@color/lightblack"
+                        android:alpha="0.6"/>
+
+                    <TextView
+                        android:id="@+id/billTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs -"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/lightblack" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="6dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/orderBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Order"
+                    android:textColor="@color/white"
+                    android:background="@color/transparent" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

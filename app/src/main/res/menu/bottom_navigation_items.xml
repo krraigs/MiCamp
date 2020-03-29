@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_home"
+        android:title="@string/menu_home"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/action_explore"
+        android:title="Explore"
+        android:icon="@drawable/ic_buy" />
+
+    <item android:id="@+id/action_events"
+        android:icon="@drawable/user_profile_connections"
+        android:title="Mentors" />
+
+
+    <item android:id="@+id/action_chat"
+        android:title="Chat"
+        android:icon="@drawable/ic_chat" />
+
+</menu>

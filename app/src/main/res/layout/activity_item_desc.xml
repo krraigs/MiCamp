@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Blog.BlogActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:backgroundTint="@color/littlelightgrey"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:id="@+id/itemInfoRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemImage">
+
+            <TextView
+                android:id="@+id/adPostedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 June 2019"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/itemPriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 500"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/darkpurple"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/itemInfoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemPriceTv"
+                android:text="Drafter old"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/userLocationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemInfoTv"
+                android:text="User Location"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/userLocationTv"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemDescRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemInfoRl">
+
+            <TextView
+                android:id="@+id/descRaw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="24sp"
+                android:textColor="@color/darkpurple"
+                android:textStyle="italic"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/itemDetailTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="It is the information provided by the user about the product! along with how old it is and the brand as well"
+                android:layout_below="@id/descRaw"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/itemDetailTv"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sellerProfileRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemDescRl">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sellerProfilePic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/user_profile_image"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:id="@+id/sellerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRAVEEN Agrawal"
+                android:textAllCaps="true"
+                android:layout_toEndOf="@id/sellerProfilePic"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:textColor="@color/lightblack"
+                android:paddingEnd="6dp"/>
+            <TextView
+                android:id="@+id/visitProfileTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sellerName"
+                android:layout_toEndOf="@id/sellerProfilePic"
+                android:text="VISIT PROFILE"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/sellerChatBt"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/background_view"
+                android:backgroundTint="@color/darkpurple"
+                android:text="CHAT"
+                android:layout_below="@id/visitProfileTv"
+                android:layout_toEndOf="@id/sellerProfilePic"
+                android:textColor="@color/white"
+                tools:ignore="ButtonStyle"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/sellerCallBt"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/background_view"
+                android:backgroundTint="@color/darkpurple"
+                android:text="Call"
+                android:layout_toEndOf="@id/sellerChatBt"
+                android:layout_below="@id/visitProfileTv"
+                android:textColor="@color/white"
+                tools:ignore="ButtonStyle"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/sellerProfilePic" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

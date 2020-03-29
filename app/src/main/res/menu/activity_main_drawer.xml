@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/calendar_drawer"
+            android:icon="@drawable/calendar_drawer"
+            android:title="Calendar" />
+
+        <item
+            android:id="@+id/contact_drawer"
+            android:icon="@drawable/contact_drawer"
+            android:title="Contacts" />
+
+        <item
+            android:id="@+id/blogs_drawer"
+            android:icon="@drawable/ic_blog"
+            android:title="Your Blogs" />
+
+        <item
+            android:id="@+id/ads_drawer"
+            android:icon="@drawable/ic_buy"
+            android:title="Your Ads" />
+
+        <item
+            android:id="@+id/ur_order"
+            android:icon="@drawable/ic_buy"
+            android:title="Your Orders" />
+
+        <item
+            android:id="@+id/contact_us_drawer"
+            android:icon="@drawable/contact_us_drawer"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/log_out"
+            android:icon="@drawable/log_out_icon"
+            android:title="Log Out" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:id="@+id/raw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Details"
+        android:textSize="26sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/mainappcolor"
+        android:layout_marginBottom="8dp" />
+
+    <View
+        android:id="@+id/raw1"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:background="@color/grey"
+        android:layout_below="@id/raw"
+        android:layout_centerHorizontal="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_pic"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/raw1"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/user_profile_image"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/rawx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your photo"
+        android:layout_below="@id/user_profile_pic"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameL"
+        android:layout_below="@id/rawx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Name(in hostel register)" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rollNoL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameL">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rollNoEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="College Roll No" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/hostelL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rollNoL"
+        android:background="@drawable/round_corner_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp">
+
+        <Spinner
+            android:id="@+id/hostelSp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/roomL"
+        android:layout_width="match_parent"
+        android:layout_below="@id/hostelL"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/roomEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Room No" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:background="@drawable/curve"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple"
+        android:layout_below="@id/roomL"
+        android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+</RelativeLayout>

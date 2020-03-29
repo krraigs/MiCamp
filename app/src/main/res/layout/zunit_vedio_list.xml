@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp">
+
+    <ImageView
+        android:id="@+id/videoImage"
+        android:src="@color/black"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/videoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="World Test Championship"
+        android:layout_toEndOf="@id/videoImage"
+        android:textColor="@color/lightblack"
+        android:maxLines="2"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/videoInfoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cricket championship"
+        android:layout_toEndOf="@id/videoImage"
+        android:layout_below="@id/videoTv"
+        android:maxLines="1"
+        android:alpha="0.6"
+        android:textColor="@color/lightblack"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoInfoTv"
+        android:text="2 days ago"
+        android:textSize="12sp"
+        android:textColor="@color/lightblack"
+        android:alpha="0.6"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/videoImage" />
+
+</RelativeLayout>

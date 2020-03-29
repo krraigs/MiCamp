@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/categoryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true"
+        android:tint="@color/lightblack"
+        android:src="@drawable/ic_keyboard_arrow_down" />
+
+<!--    <ImageView-->
+<!--        android:layout_width="12dp"-->
+<!--        android:layout_height="12dp"-->
+<!--        android:src="@drawable/online"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:id="@+id/image"-->
+<!--        android:tint="@color/redOk"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="4dp"/>-->
+
+    <TextView
+        android:id="@+id/categoryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:alpha="0.9"
+        android:text="Food Category"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background = "@color/lightgrey"
+        android:layout_below="@id/categoryTv"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"/>
+
+</RelativeLayout>
+

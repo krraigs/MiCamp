@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/itemTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="17sp"
+        android:textColor="@color/lightblack"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin = "16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/halfRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/raw"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/online"
+            android:tint="@color/colorPrimary"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/selfTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Half"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/raw"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/mainappcolor"/>
+
+        <TextView
+            android:id="@+id/halfPriceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 20"
+            android:layout_below="@id/selfTv"
+            android:layout_toEndOf="@id/raw"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.8"
+            android:textColor="@color/mainappcolor"/>
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:id="@+id/qtyRl"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:background = "@drawable/round_corner_light"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/subBt"
+                android:layout_width="28dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_sub_black"
+                android:tint="@color/colorPrimary"
+                android:backgroundTint="@color/greenOk"/>
+
+            <TextView
+                android:id="@+id/qtyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="4dp"
+                android:layout_toEndOf="@id/subBt"
+                android:paddingEnd="4dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/message_button"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/addQtyBt"
+                android:layout_width="28dp"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:layout_toEndOf="@id/qtyTv"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add_black"
+                android:tint="@color/colorPrimary"
+                android:backgroundTint="@color/white"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addItemBt"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="ADD"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:background="@drawable/connect_button"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/lightgrey"/>
+
+    <RelativeLayout
+        android:id="@+id/fullRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/raw1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/online"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/fullTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/raw1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/mainappcolor"/>
+
+        <TextView
+            android:id="@+id/fullPriceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 40"
+            android:layout_below="@id/fullTv"
+            android:layout_toEndOf="@id/raw1"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.8"
+            android:textColor="@color/mainappcolor"/>
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:id="@+id/qtyFullRl"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:background = "@drawable/round_corner_light"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/subFullBt"
+                android:layout_width="28dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_sub_black"
+                android:tint="@color/colorPrimary"
+                android:backgroundTint="@color/greenOk"/>
+
+            <TextView
+                android:id="@+id/qtyFullTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="4dp"
+                android:layout_toEndOf="@id/subFullBt"
+                android:paddingEnd="4dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/message_button"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/addQtyFullBt"
+                android:layout_width="28dp"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:layout_toEndOf="@id/qtyFullTv"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add_black"
+                android:tint="@color/colorPrimary"
+                android:backgroundTint="@color/white"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addFullBt"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="ADD"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:background="@drawable/connect_button"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/lightgrey"/>
+
+
+
+</LinearLayout>

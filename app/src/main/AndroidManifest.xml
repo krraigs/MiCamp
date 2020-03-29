@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kraigs.android.micamp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Home.Vedio.VediosActivity"></activity>
+        <activity android:name=".extras.ErrorActivity" />
+        <activity android:name=".extras.SettingsActivity" />
+        <activity
+            android:name=".Order.AllItemsActivity"
+            android:parentActivityName=".Order.ItemsListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserProfile.MyOrdersActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".extras.NotificationActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UserProfile.ProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Hostel.HostelActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Order.ItemsListActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Order.FoodItemsActivity"
+            android:parentActivityName=".Order.ItemsListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".extras.Intro.IntroActivity" />
+        <activity android:name=".Home.News.AddNewsActivity" />
+        <activity
+            android:name=".Academics.BranchPac.LaboratoriesActivity"
+            android:parentActivityName=".Academics.BranchPac.BranchesActivity" />
+        <activity
+            android:name=".Home.Blog.BloghistoryActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Home.Blog.AddBlogActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LostAndFoundActivity.AddLostFoundActivity" />
+        <activity
+            android:name=".BuyAndSell.AdsHistoryActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BuyAndSell.AddAdActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BuyAndSell.ItemDescActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Home.Blog.BlogDetailActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Home.Events.EventsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Home.Calendar.CalendarNewActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".extras.WelcomeActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Academics.BranchPac.LabActivity" />
+        <activity
+            android:name=".Home.GalleryPac.GalleryPhotosActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Drawer.ContactTypeActivity"
+            android:parentActivityName=".Drawer.ContactActivity" />
+        <activity
+            android:name=".Drawer.ContactActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Academics.BranchPac.BranchesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Chat.ImageViewrActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="CHAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mentor.ConnectedMentorsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Chat.ChatRequestActivity"
+            android:parentActivityName=".UserProfile.ProfileActivity">
+            <intent-filter>
+                <action android:name="Request" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mentor.ConnectMentorActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".UserProfile.EditUserBasicInfoActivity" />
+        <activity android:name=".Mentor.MentorProfileActivity">
+            <intent-filter>
+                <action android:name="Accept" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserProfile.EditProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UserProfile.ComplaintActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Login.MobileLoginActivity" />
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".extras.WebViewClass" />
+        <activity
+            android:name=".Home.Books.BooksPdfActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Home.Events.EventsDetailActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Home.Updates.UpdatesActivity"
+            android:label="@string/title_activity_updates"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Home.News.NewsActivity"
+            android:label="@string/title_activity_exams"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c9132dc7968e68aca4f50fbb432f783486795cf8" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/appAdId" />
+    </application>
+
+</manifest>
